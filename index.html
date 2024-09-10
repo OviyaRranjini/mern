@@ -3,40 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
 
-<style>
-     *{
-        margin: 0px;
-        padding: 0px;
-     }
-     body{
-        height:fit-content;
-        width:fit-content;
-        background-color:#f5f5f5;
-     }
-</style>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+
+
+        .section1 {
+            width: 70%;
+            height: 12rem;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .profile-img-section {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .profile-data {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+
+        .profile-img {
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+        }
+
+
+        .section2 {
+            width: 70%;
+            height: 12rem;
+            /* background-color: aquamarine; */
+            border: 1px solid aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section3 {
+            width: 70%;
+            height: 20rem;
+            /* background-color: aquamarine; */
+            border: 1px solid aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section4 {
+            width: 70%;
+            height: 15rem;
+            /* background-color: aquamarine; */
+            border: 1px solid aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .heading {
+            /* height: 10%; */
+            color: aquamarine;
+            font-weight: bold;
+        }
+
+
+        .ed-table {
+            width: 100%;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+
+        th,
+        td {
+            padding: 1rem;
+            border: 1px solid gray;
+        }
+
+
+        .companies {
+            font-weight: bold;
+
+
+            color: aquamarine;
+        }
+    </style>
 </head>
 <body>
     <!-- clt + / is command short cut -->
      <!-- dollar symbol=$ 
       assing as dynamic data  -->
-      <div class="section1"></div>
-      <div class="section2"></div>
-      <div class="section3"></div>
-      <div class="section4"></div>
+      <div class="section1">
+        <div class="profile-img-section">
+           <img class="profile-img" src="C:\Users\oviya\OneDrive\Pictures\livin photo.jpg" alt="Livin Raj">
+        </div>
+        <div class="profile-data">
+             <h3>Livin Raj</h3>
+              <h5>Email:livin@gmail.com</h5>
+        </div>
+      </div>
+      <div class="section2">
+      <div class="heading">
+        <h3>Objective</h3>      </div>
+        <p class="Content">This is the content of the objective</p></div>
+      <div class="section3">
+        <div class="heading">
+            <h3> Education</h3>
+        </div>
+        <table class="ed-table">
+            <tr>
+                <th>Name</th>
+                <th>Pass out Year</th>
+                <th>Mark or GPA</th>
+            </tr>
+            <tr>
+                <td>Muthamilzhl</td>
+                <td>2024</td>
+                <td>90%</td>
+            </tr>
+            <tr>
+                <td>SKCET</td>
+                <td>2028</td>
+                <td>8.0</td>
+            </tr>
+        </table>
+      </div>
+      <div class="section4">
+        <div class="heading"> Certification </div>
+        <p class="companies">XYZ Company</p>
+        <p>The company</p>
+      </div>
       <div class="section5"></div>
-<div class="head">
-    <div class="hello span mailtest">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-</div>
+      <!-- It is class created by shortcut -->
+
 </body>
 </html>
