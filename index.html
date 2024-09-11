@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0px;
@@ -13,7 +13,7 @@
 
 
         body {
-            height: 100vh;
+             height: 100vh; 
             width: 100vw;
             background-color: #f5f5f5;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -106,7 +106,17 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
              align-items: start; 
             /* padding: 10px; */
         }
-
+        .section5 {
+            width: 70%;
+            height: 15rem;
+            /* background-color: aquamarine; */
+            border: 1px solid   #f5f5f5;
+            display: flex;
+            flex-direction: column;
+             justify-content: center; 
+             align-items: start; 
+            /* padding: 10px; */
+        }
 
         .heading {
             /* height: 10%; */
@@ -140,9 +150,22 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
            
         }
         li{
-            padding-left:10px;
+              margin-left: 2rem;
         }
-        
+        .section6{
+            display: flex;
+    width: 70%;
+    height: 2rem;
+    justify-content: space-evenly;
+    align-content: space-between;
+    background-color: #580bf1;
+    flex-direction: row;
+        }
+        i{
+            align-content: space-around; 
+            color:white;
+
+        }
     </style>
 </head>
 <body>
@@ -186,16 +209,26 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
       </div>
       <div class="section4">
         <div class="heading"> <h1>Certification : </h1></div>
-        <ul>
-            <li> <p class="companies">XYZ Company</p>
-                <p class="content">The company</p></li>
-            <li><p class="companies">ABC Company</p>
-                <p class="content">The company</p></li>
-        </ul>
-       
-        
+         <p class="companies">XYZ Company</p>
+                <p class="content">The company</p>
+        <p class="companies">ABC Company</p>
+                <p class="content">The company</p>
       </div>
-      <div class="section5"></div>
+      <div class="section5">
+        <div class="heading">
+           <h1> Skill :</h1>
+        </div>
+       <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+       </ul>
+      </div>
+      <div class="section6">
+        <i class="fa-regular fa-envelope"></i>
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-regular fa-copyright"></i>
+      </div>
       <!-- It is class created by shortcut -->
 
 </body>
