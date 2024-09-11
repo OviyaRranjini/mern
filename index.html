@@ -13,12 +13,17 @@
 
 
         body {
-             height: 100vh; 
+            /* vh-view port height */
+              /* height: 100vh;  */
+             /* vw-view port width  */
             width: 100vw;
+            /* #f5f5f5 and #f9f9f9 are both same are mild difference */
             background-color: #f5f5f5;
+            /* we import the font from the web site */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
+            /* justify-conten is determine the flex-row(x-axis) and flex-column(y axis) */
             justify-content: start;
             align-items: center;
             /* color: rgb(32, 237, 9); */
@@ -28,27 +33,34 @@
         .section1 {
             width: 70%;
             height: 15rem;
-            background: #8E2DE2;  /* fallback for old browsers */
+            border-radius: 3%;
+            background: #8E2DE2;  /* fallback for old browsers */ 
 background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+   /* border radius is ok 20%, if go more the 45% it gose to circle */
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            box-shadow:
+            /* box-shadow:
                         2.1px 2.3px 0.4px -2px rgba(0, 0, 0, 0.16),
-                       17px 18px 3px -2px rgba(0, 0, 0, 0.32)
-                        ;
+                       17px 18px 3px -2px rgba(0, 0, 0, 0.32); */
+           
         }
 
 
         .profile-img-section {
-            width: 40%;
-            height: 100%;
+            width: 10rem;
+            height: 10rem;
             display: flex;
             justify-content: center;
             align-items: center;
+            background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius:50%;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
 
 
@@ -58,6 +70,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            margin-left: 5rem;
             color: #e8ebf8;
         }
 
@@ -120,7 +133,9 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 
         .heading {
             /* height: 10%; */
-            color: blue;
+            color: #8E2DE2;  /* fallback for old browsers */ 
+  color: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to right, #4A00E0, #8E2DE2);
             font-weight: bold;
         }
 
@@ -128,7 +143,9 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
         .ed-table {
             width: 100%;
             border: 1px solid rgb(59, 57, 57);
+            /* merge the boder inside the table */
             border-collapse: collapse;
+            border-radius: 50%;
         }
 
 
@@ -136,6 +153,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
         td {
             padding: 1rem;
             border: 1px solid gray;
+            border-radius: 50%;
         }
 
 
@@ -155,17 +173,60 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
         .section6{
             display: flex;
     width: 70%;
-    height: 2rem;
+    height: 3rem;
     justify-content: space-evenly;
     align-content: space-between;
-    background-color: #580bf1;
+    background: #8E2DE2;  /* fallback for old browsers */ 
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2);
     flex-direction: row;
+    border-radius: 5%;
+    position: sticky;
+    bottom:5px;
         }
         i{
             align-content: space-around; 
             color:white;
+            margin: 0px 15px;
 
         }
+        .setion7{
+            display: flex;
+            justify-content:space-evenly;
+            align-content:space-around;
+            padding: 0 5%;
+        }
+        /* From Uiverse.io by Yaya12085 */ 
+button {
+  max-width: 300px;
+  display: flex;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius:  40px;;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  gap: 0.75rem;
+  color: rgb(65, 63, 63);
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .6s ease;
+  position:fixed;
+  bottom: 4%;
+  right: 3%;
+}
+
+.button svg {
+  height: 20px;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
     </style>
 </head>
 <body>
@@ -228,6 +289,16 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
         <i class="fa-regular fa-envelope"></i>
         <i class="fa-regular fa-user"></i>
         <i class="fa-regular fa-copyright"></i>
+      </div>
+      <div class="section7">
+<button class="button">
+  <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262">
+  <path fill="#4285F4" d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"></path>
+  <path fill="#34A853" d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"></path>
+  <path fill="#FBBC05" d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"></path>
+  <path fill="#EB4335" d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"></path>
+</svg>
+</button>
       </div>
       <!-- It is class created by shortcut -->
 
