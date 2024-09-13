@@ -1,0 +1,112 @@
+~<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(66, 8, 66, 0.984);
+}
+    .form{
+        width: 80%;
+        height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+     gap: 2rem;
+     background: rgba( 255, 255, 255, 0 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+
+    input{
+        width: 20rem;
+     height: 3rem;
+     border-radius:10px;
+     font-weight: bold;
+     background-color:rgba(66, 8, 66, 0.984);
+     border-color:white ;
+     color: aliceblue;
+    }
+    input:hover{
+        background-color: aliceblue;
+        color: black;
+    }
+    .btn{
+        width: 8rem;
+        height: 3rem;
+        border-radius: 30%;
+        background-color: rgba(66, 8, 66, 0.984);
+        border-color: white;
+        color: white;
+    }
+    .btn:hover{
+      background-color: green;
+    }
+    h3{
+        color: aliceblue;
+    }
+    </style>
+</head>
+<body>
+    <form class="form">
+        <h3> Login</h3>
+        <!-- <lable class="head">Enter your name</lable><br> -->
+        <input type="text" id="name" placeholder=" Enter the name">
+        <!-- <label class="head">Enter your EMail</label><br> -->
+        <input type="email" id="email" placeholder=" Enter the Mail ID">
+        <!-- <lable class="head">Enter your Phone number</lable><br> -->
+        <input type="number" id="age" placeholder=" Enter the age">
+        <input type="tel" id="phone" placeholder=" Enter the Phone Number">
+        <!-- <lable class="head"> Enter Your Password</lable><br> -->
+        <input type="password" id="pass" placeholder=" Enter the Password">
+        <button type="button" class="btn" onclick="myfun()">Submit</button> 
+    </form>
+</body>
+<script>
+    function myfun(){
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let number=document.getElementById("phone").value;
+    let age=document.getElementById("age").value;
+    let password = document.getElementById("pass").value;
+    const data={
+        username :name,
+        useremail:email,
+        userphone:number,
+        userpassword:password,
+    }
+    console.log(name+" "+email+" "+number+" "+age+" "+password);
+     const {username,useremail,userphone,userpassword} = data;
+     if(name!==""&&email!==""&&number!==""&&password!==""&&age!==""){
+        // if(email!==""){
+        //     console.log("correct your email");
+        // }
+        // else
+         if(age<=18){
+           console.log("your ahe limit is not enougth");
+        }
+        else{
+            console.log("You are Logined");
+        }
+     }
+     else{
+        alert("Please fill your DATA");
+     }
+        
+     }
+</script>
+</html>

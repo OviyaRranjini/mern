@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      *{
+         margin:0px;
+         padding:0px;
+      }
+      body{
+         width:100vw;
+         height: 100vh;
+      }
+      .grid{
+         width:90%;
+         height: 90%;
+        display: grid;
+        grid-template-columns:repeat(3,33%);
+        grid-template-rows:repeat(3,33%);
+        grid-gap:10px;
+        padding-left:10px;
+        padding-top:10px;
+      }
+      .red{
+         background-color:red;
+         color: white;
+      }
+      .Blue{
+         background-color: blue;
+         color: white;
+         grid-row:2/3;
+         grid-column:2/3;
+      }
+      .green{
+         background-color: green;
+         color: white;
+         grid-row:3/4;
+         grid-column:3/4;
+      }
+      @keyframes myani{
+       0%{
+        scale: 0%;
+        transition:translatev(0%);
+       }
+       25%{
+         scale:25%;
+         transition:translatev(25%);
+       }
+       50%{
+         scale:50%;
+         transition:translatev(50%);
+       }
+       75%{
+         scale:75%;
+         transition:translatev(75%);
+       }
+       100%{
+         scale: 100%;
+         transition:translatev(100%);
+       }
+      }
+ .ani{
+   animation:5s myani ease-in infinite;
+ }
+      </style>
+ </head>
+ <body>
+     <div class="grid">
+     <p class="red">Red</p>
+     <p class="Blue">Blue</p>
+     <p class="green">Green</p>
+ </div>
+ <div class="ani">
+  <icon
+ </div>
+ </body> 
+</html>
